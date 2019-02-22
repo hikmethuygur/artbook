@@ -62,8 +62,8 @@
 			children = (
 				2FFB8F212215C4CC00E81C29 /* selectImage.jpg */,
 				2FFB8F082215BEC800E81C29 /* AppDelegate.swift */,
-				2FFB8F1F2215C05500E81C29 /* DetailsViewController.swift */,
 				2FFB8F0A2215BEC800E81C29 /* ViewController.swift */,
+				2FFB8F1F2215C05500E81C29 /* DetailsViewController.swift */,
 				2FFB8F0C2215BEC800E81C29 /* Main.storyboard */,
 				2FFB8F122215BEC900E81C29 /* Assets.xcassets */,
 				2FFB8F142215BEC900E81C29 /* LaunchScreen.storyboard */,

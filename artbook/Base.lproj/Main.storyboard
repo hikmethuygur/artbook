@@ -56,22 +56,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="selectImage.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="OWr-0L-lJL">
-                                <rect key="frame" x="37" y="120" width="300" height="230"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selectImage.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="OWr-0L-lJL">
+                                <rect key="frame" x="37.5" y="120" width="300" height="230"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="230" id="Y3c-gs-aMp"/>
+                                    <constraint firstAttribute="width" constant="300" id="bSV-cm-Ewb"/>
+                                </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WPG-o6-bn0">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WPG-o6-bn0">
                                 <rect key="frame" x="37" y="388" width="300" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Artist" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WT6-vD-SJG">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Artist" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WT6-vD-SJG">
                                 <rect key="frame" x="37" y="426" width="300" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Year" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x48-rl-CzH">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Year" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x48-rl-CzH">
                                 <rect key="frame" x="37" y="464" width="300" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -80,25 +84,24 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="OWr-0L-lJL" firstAttribute="leading" secondItem="Aag-BB-QzS" secondAttribute="leading" constant="37" id="BSo-w2-FvH"/>
-                            <constraint firstItem="WT6-vD-SJG" firstAttribute="top" secondItem="WPG-o6-bn0" secondAttribute="bottom" constant="8" symbolic="YES" id="IiC-fS-pVT"/>
-                            <constraint firstItem="WPG-o6-bn0" firstAttribute="trailing" secondItem="WT6-vD-SJG" secondAttribute="trailing" id="SAx-8i-bGH"/>
-                            <constraint firstItem="x48-rl-CzH" firstAttribute="top" secondItem="WT6-vD-SJG" secondAttribute="bottom" constant="8" symbolic="YES" id="YCh-Vf-dnO"/>
-                            <constraint firstItem="WPG-o6-bn0" firstAttribute="leading" secondItem="WT6-vD-SJG" secondAttribute="leading" id="am0-7c-ACu"/>
-                            <constraint firstItem="OWr-0L-lJL" firstAttribute="trailing" secondItem="WPG-o6-bn0" secondAttribute="trailing" id="eeK-fv-OYU"/>
-                            <constraint firstItem="OWr-0L-lJL" firstAttribute="centerX" secondItem="nsK-5r-MQ5" secondAttribute="centerX" id="fDs-cw-mD0"/>
-                            <constraint firstItem="WPG-o6-bn0" firstAttribute="top" secondItem="OWr-0L-lJL" secondAttribute="bottom" constant="38" id="g79-7I-VvD"/>
-                            <constraint firstItem="WT6-vD-SJG" firstAttribute="leading" secondItem="x48-rl-CzH" secondAttribute="leading" id="jT6-u5-C0R"/>
-                            <constraint firstItem="OWr-0L-lJL" firstAttribute="leading" secondItem="WPG-o6-bn0" secondAttribute="leading" id="lUc-xn-PwN"/>
-                            <constraint firstItem="WT6-vD-SJG" firstAttribute="trailing" secondItem="x48-rl-CzH" secondAttribute="trailing" id="ozY-rp-h4r"/>
-                            <constraint firstItem="OWr-0L-lJL" firstAttribute="top" secondItem="Aag-BB-QzS" secondAttribute="top" constant="56" id="tu2-oj-VvF"/>
+                            <constraint firstItem="WPG-o6-bn0" firstAttribute="top" secondItem="OWr-0L-lJL" secondAttribute="bottom" constant="38" id="0CK-r8-h88"/>
+                            <constraint firstItem="OWr-0L-lJL" firstAttribute="centerX" secondItem="nsK-5r-MQ5" secondAttribute="centerX" id="HyO-j9-051"/>
+                            <constraint firstItem="x48-rl-CzH" firstAttribute="top" secondItem="WT6-vD-SJG" secondAttribute="bottom" constant="8" symbolic="YES" id="KGG-5F-Ulh"/>
+                            <constraint firstItem="OWr-0L-lJL" firstAttribute="top" secondItem="Aag-BB-QzS" secondAttribute="top" constant="56" id="Ofk-ml-rx6"/>
+                            <constraint firstItem="OWr-0L-lJL" firstAttribute="trailing" secondItem="WPG-o6-bn0" secondAttribute="trailing" id="awY-de-5Zk"/>
+                            <constraint firstItem="WT6-vD-SJG" firstAttribute="leading" secondItem="x48-rl-CzH" secondAttribute="leading" id="b5s-oP-xhQ"/>
+                            <constraint firstItem="WT6-vD-SJG" firstAttribute="trailing" secondItem="x48-rl-CzH" secondAttribute="trailing" id="c0Q-am-nAt"/>
+                            <constraint firstItem="WT6-vD-SJG" firstAttribute="top" secondItem="WPG-o6-bn0" secondAttribute="bottom" constant="8" symbolic="YES" id="cCd-ln-qAa"/>
+                            <constraint firstItem="OWr-0L-lJL" firstAttribute="leading" secondItem="WPG-o6-bn0" secondAttribute="leading" id="cOK-3I-Bt3"/>
+                            <constraint firstItem="WPG-o6-bn0" firstAttribute="leading" secondItem="WT6-vD-SJG" secondAttribute="leading" id="kR3-Bk-an0"/>
+                            <constraint firstItem="WPG-o6-bn0" firstAttribute="trailing" secondItem="WT6-vD-SJG" secondAttribute="trailing" id="pNC-OT-bhc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Aag-BB-QzS"/>
                     </view>
                     <connections>
                         <outlet property="artistText" destination="WT6-vD-SJG" id="IBg-0Y-iTy"/>
+                        <outlet property="imageView" destination="OWr-0L-lJL" id="Fed-g9-piW"/>
                         <outlet property="nameText" destination="WPG-o6-bn0" id="TrI-L1-zfT"/>
-                        <outlet property="selectImg" destination="OWr-0L-lJL" id="DSf-he-cV3"/>
                         <outlet property="yearText" destination="x48-rl-CzH" id="XTM-N9-RXC"/>
                     </connections>
                 </viewController>
